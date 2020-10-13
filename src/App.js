@@ -1,13 +1,18 @@
 import React from 'react'
 import './App.scss'
-import { Header } from './components/Header/Header'
+import { Header } from './components/Header'
+import { SwitchRoutes } from './Routes'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
+    <>
       <Header />
-      <h1>Hello, Puppa!</h1>
-    </div>
+      <div className="App">
+        <div className="container">
+          <SwitchRoutes />
+        </div>
+      </div>
+    </>
   )
 }
 

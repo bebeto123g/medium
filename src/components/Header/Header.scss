@@ -1,3 +1,55 @@
-.Header {
-  color: #00b0ff;
+@import "../../UI/varsUI";
+
+.navbar {
+  width: 100vw;
+  min-height: 60px;
+  font-size: 20px;
+
+  .container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+      color: $success;
+      text-decoration: none;
+      font-size: 40px;
+      font-weight: bolder;
+      text-shadow: -1px 1px 4px $success;
+      transition: .3s;
+
+      &:hover {
+        color: white;
+        text-shadow: -2px 2px 10px $success;
+      }
+    }
+
+    .links {
+      width: 40%;
+      display: flex;
+      justify-content: space-between;
+
+      li {
+        list-style: none;
+
+        a {
+          text-decoration: none;
+          color: cadetblue;
+          text-shadow: -1px 1px 4px lighten($success, 20%);
+          transition: .3s;
+
+          &:hover {
+            color: $danger;
+            text-shadow: 0px 0px 15px $success;
+          }
+
+          &.active {
+            color: $danger;
+          }
+        }
+      }
+    }
+  }
 }
