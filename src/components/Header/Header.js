@@ -4,9 +4,9 @@ import './Header.sass'
 const Header = (props) => {
   return (
     <div className="Header">
-      <p>Change Header about thunk</p>
+      <p>Change Header about thunk before helper</p>
     </div>
   )
 }
 
-export { Header }
+export { Header }s
